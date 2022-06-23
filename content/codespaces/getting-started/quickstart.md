@@ -1,103 +1,291 @@
----
-title: Quickstart for Codespaces
-intro: 'Try out {% data variables.product.prodname_codespaces %} in 5 minutes.'
-allowTitleToDifferFromFilename: true
-product: '{% data reusables.gated-features.codespaces %}'
-versions:
-  fpt: '*'
-  ghec: '*'
-type: quick_start
-topics:
-  - Codespaces
-redirect_from:
-  - /codespaces/codespaces-quickstart
----
-
-## Introduction
-
-In this guide, you'll create a codespace from a [template repository](https://github.com/github/haikus-for-codespaces) and explore some of the essential features available to you within the codespace.
-
-From this quickstart, you will learn how to create a codespace, connect to a forwarded port to view your running application, use version control in a codespace, and personalize your setup with extensions.
-
-For more information on exactly how {% data variables.product.prodname_codespaces %} works, see the companion guide "[Deep dive into {% data variables.product.prodname_codespaces %}](/codespaces/getting-started/deep-dive)."
-
-## Creating your codespace
-
-1. Navigate to the [template repository](https://github.com/github/haikus-for-codespaces) and select **Use this template**. 
-
-2. Name your repository, select your preferred privacy setting, and click **Create repository from template**.
-
-3. Navigate to the main page of the newly created repository. Under the repository name, use the **{% octicon "code" aria-label="The code icon" %} Code** drop-down menu, and in the **Codespaces** tab, click **Create codespace on main**.
-
-  ![New codespace button](/assets/images/help/codespaces/new-codespace-button.png)
-
-## Running the application
-
-Once your codespace is created, your repository will be automatically cloned into it. Now you can run the application and launch it in a browser.
-
-1. Since this example uses a Node.js project, start the application by entering `npm run dev` in the terminal. This command executes the `dev` script in the package.json file and starts up the web application defined in the sample repository.
-   
-   ![npm run dev in terminal](/assets/images/help/codespaces/codespaces-npm-run-dev.png)
-
-    If you're following along with a different application type, enter the corresponding start command for that project.
-
-2. When your application starts, the codespace recognizes the port the application is running on and displays a prompt to let you know it has been forwarded. 
-
-  ![Port forwarding toast](/assets/images/help/codespaces/quickstart-port-toast.png)
-
-3. Click **Open in Browser** to view your running application in a new tab.
-
-## Edit the application and view changes
-
-1. Switch back to your codespace and open the `haikus.json` file by double-clicking it in the File Explorer.
-
-2. Edit the `text` field of the first haiku to personalize the application with your own haiku.
-
-3. Go back to the running application tab in your browser and refresh to see your changes.
-   
-  {% octicon "light-bulb" aria-label="The lightbulb icon" %}  If you've closed the tab, open the Ports panel and click the **Open in browser** icon for the running port.
-  ![Port Forwarding Panel](/assets/images/help/codespaces/quickstart-forward-port.png)
-
-## Committing and pushing your changes
-
-Now that you've made a few changes, you can use the integrated terminal or the source view to commit and push the changes back to the remote.
-
-{% data reusables.codespaces.source-control-display-dark %}
-1. To stage your changes, click  **+** next to the file you've changed, or next to **Changes** if you've changed multiple files and you want to stage them all.
-![Source control side bar with staging button highlighted](/assets/images/help/codespaces/codespaces-commit-stage.png)
-1. Type a commit message describing the change you've made.
-![Source control side bar with a commit message](/assets/images/help/codespaces/codespaces-commit-commit-message.png)  
-1. To commit your staged changes, click the check mark at the top the source control side bar.
-![Click the check mark icon](/assets/images/help/codespaces/codespaces-commit-checkmark-icon.png)  
-    You can push the changes you've made. This applies those changes to the upstream branch on the remote repository. You might want to do this if you're not yet ready to create a pull request, or if you prefer to create a pull request on {% data variables.product.prodname_dotcom %}.
-1. At the top of the side bar, click the ellipsis (**...**).
-![Ellipsis button for View and More Actions](/assets/images/help/codespaces/source-control-ellipsis-button-nochanges.png)
-1. In the drop-down menu, click **Push**.
-
-## Personalizing with an extension
-
-Within a codespace, you have access to the {% data variables.product.prodname_vscode_marketplace %}. For this example, you'll install an extension that alters the theme, but you can install any extension that is useful for your workflow.
-
-1. In the left sidebar, click the Extensions icon.
-
-2.  In the search bar, enter `fairyfloss` and install the fairyfloss extension.
-
-  ![Add an extension](/assets/images/help/codespaces/add-extension.png)
-
-3. Select the `fairyfloss` theme by selecting it from the list.
-
-  ![Select the fairyfloss theme](/assets/images/help/codespaces/fairyfloss.png)
-
-4. Changes you make to your editor setup in the current codespace, such as theme and keyboard bindings, are synced automatically via [Settings Sync](https://code.visualstudio.com/docs/editor/settings-sync) to any other codespaces you open and any instances of {% data variables.product.prodname_vscode %} that are signed into your GitHub account.
-
-## Next Steps
-
-You've successfully created, personalized, and run your first application within a codespace but there's so much more to explore! Here are some helpful resources for taking your next steps with {% data variables.product.prodname_codespaces %}.
-  - [Deep dive](/codespaces/getting-started/deep-dive): This quickstart presented some of the features of {% data variables.product.prodname_codespaces %}. The deep dive looks at these areas from a technical standpoint.
-  - [Setting up your project for {% data variables.product.prodname_codespaces %}](/codespaces/getting-started-with-codespaces): These guides provide information on setting up your project to use {% data variables.product.prodname_codespaces %} with specific languages.
-  - [Configuring {% data variables.product.prodname_codespaces %} for your project](/codespaces/setting-up-your-codespace/configuring-codespaces-for-your-project): This guide provides details on creating a custom configuration for {% data variables.product.prodname_codespaces %} for your project.
-
-## Further reading
-
-- [Enabling {% data variables.product.prodname_codespaces %} for your organization](/codespaces/managing-codespaces-for-your-organization/enabling-codespaces-for-your-organization)
-- [Managing billing for {% data variables.product.prodname_codespaces %} in your organization](/codespaces/managing-codespaces-for-your-organization/managing-billing-for-codespaces-in-your-organization)
+{
+	"nomes": [
+		"Taida 怠惰  {img https://files.catbox.moe/tgd8ws.jpg}",
+		"Kleberzinˢᶜᶠᶜ {img https://files.catbox.moe/h4igxt.jpg}",
+		"LLeywin  {img https://files.catbox.moe/xztw50.jpg}",
+		"VHPJ  {img https://files.catbox.moe/r1dflv.jpg}",
+		"Sting {img https://files.catbox.moe/falyq2.jpg}",
+		"Hiroki ヒロ {img https://files.catbox.moe/pwryb3.jpg}",
+		"Hector ♔ The Pain °« {img https://files.catbox.moe/4dtud3.jpg}",
+		"muilosko {img https://files.catbox.moe/ucpigx.jpg}",
+		"Matheus Martins {img https://files.catbox.moe/3kdvjs.jpg}",
+		"Shino✨ {img https://files.catbox.moe/epj5n8.jpg}",
+		"Mitsuha_YN {img https://files.catbox.moe/qudbku.jpg}",
+		"Sr. Bixcoito {img https://files.catbox.moe/7o61nc.jpg}",
+		"Ayankojin 🏝️☀️ {img https://files.catbox.moe/ewi6pq.jpg}",
+		"RestY {img https://files.catbox.moe/sxoe4c.jpg}",
+		"𝕂𝕚𝕙𝕖𝕚 {img https://files.catbox.moe/vh2b9i.jpg}",
+		"Sammy bolt {img https://files.catbox.moe/uzb0va.jpg}",
+		"Uni_017 {img https://files.catbox.moe/ghss3g.jpg}",
+		"Enrico Ricci {img https://files.catbox.moe/jq2y7b.jpg}",
+		"Matheuzin {img https://files.catbox.moe/6b3n61.jpg}",
+		"Robert 🍣 {img https://files.catbox.moe/73a0da.jpg}",
+		"HAZIN {img https://files.catbox.moe/3emo71.jpg}",
+		"EduardoXt {img https://files.catbox.moe/urnkix.jpg}",
+		"Carlo {img https://files.catbox.moe/18usq9.jpg}",
+		"Mushokufag {img https://files.catbox.moe/obgajt.jpg}",
+		"Counter {img https://files.catbox.moe/dxf25f.jpg}",
+		"Susbaru {img https://files.catbox.moe/oaf2kx.jpg}",
+		"aoda {img https://files.catbox.moe/9ys3gg.jpg}",
+		"Felipe {img https://files.catbox.moe/kbjrz0.jpeg}",
+		"Ryouma {img https://files.catbox.moe/hfspem.jpg}",
+		"Pedro matador {img https://files.catbox.moe/bxyhm8.jpg}",
+		"Batata ahegao {img https://files.catbox.moe/afljur.jpg}",
+		"Syas_remfag {img https://files.catbox.moe/2e2cnn.jpg}",
+		"NitaTsu {img https://files.catbox.moe/xjj1u4.jpg}",
+		"wavezinn macetus japas {img https://files.catbox.moe/7pz1z4.jpg}",
+		"Vesh 🎋 {img https://files.catbox.moe/8ohetr.jpg}",
+		"Shida {img https://files.catbox.moe/v861a5.jpg}",
+		"kelderalgumacoisa {img https://files.catbox.moe/47fn9r.jpg}",
+		"Igorrbto {img https://files.catbox.moe/qqpa31.png}",
+		"Tendinit {img https://files.catbox.moe/yy5fht.jpg}",
+		"SemIdeia {img https://files.catbox.moe/1wlbim.jpg}",
+		"Hina {img https://files.catbox.moe/smtiey.jpg}",
+		"Visual Novel RN {img https://files.catbox.moe/djvb07.png}",
+		"Barata {img https://files.catbox.moe/tt2t94.jpg}",
+		"TDuragom {img https://files.catbox.moe/syj9bw.jpg}",
+		"Guiii {img https://files.catbox.moe/58wop3.png}",
+		"Iceru {img https://files.catbox.moe/1loe1p.jpg}",
+		"Light Novels Brasil {img https://files.catbox.moe/494eq2.jpg}",
+		"Bier {img https://files.catbox.moe/mskyyv.jpg}",
+		"Takto {img https://files.catbox.moe/bujoy5.jpg}",
+		"Leon the Midnights {img https://files.catbox.moe/tr1al0.jpg}",
+		"paulo {img https://files.catbox.moe/qnjhwk.jpg}",
+		"NatanLuiz {img https://files.catbox.moe/md2fcl.jpeg}",
+		"Hina-chan {img https://files.catbox.moe/dwftrt.jpg}",
+		"Speeddy {img https://files.catbox.moe/m1dcnf.jpg}",
+		"Siiyym {img https://files.catbox.moe/1fm60b.jpg}",
+		"Floristeza {img https://files.catbox.moe/txzzxc.jpg}",
+		"Debyy {img https://files.catbox.moe/03zjs2.jpg}",
+		"Okaka {img https://files.catbox.moe/bak1cp.png}",
+		"Byakuya {img https://files.catbox.moe/rfrzhh.jpg}",
+		"Art {img https://files.catbox.moe/ewj1j7.jpg}",
+		"paodebatato {img https://files.catbox.moe/tpa160.jpg}",
+		"Slay {img https://files.catbox.moe/zjybog.jpg}",
+		"mugi {img https://files.catbox.moe/fwnnad.jpg}",
+		"Heregeh {img https://files.catbox.moe/s0l4sh.jpg}",
+		"Stunkiy {img https://files.catbox.moe/6bl5dl.jpg}",
+		"rola {img https://files.catbox.moe/ipwujm.jpg}",
+		"Diego-kun {img https://files.catbox.moe/nbuvpo.jpg}",
+		"Henri {img https://files.catbox.moe/c7rvfz.png}",
+		"Nuuck {img https://files.catbox.moe/9kbu16.jpg}",
+		"Everton Lima {img https://files.catbox.moe/pts2t5.jpg}",
+		"Noliu {img https://files.catbox.moe/rrxpyo.jpg}",
+		"OBJETIVO ANIME {img https://files.catbox.moe/q3wpr7.jpg}",
+		"DuuduAizza {img https://files.catbox.moe/lbspdf.jpg}",
+		"Kurooi {img https://files.catbox.moe/85ec95.jpg}",
+		"Mσniкα Kiтsυyα ' 古見 硝子 {img https://files.catbox.moe/apc9nl.jpg}",
+		"Pandora {img https://files.catbox.moe/q8y30p.jpg}",
+		"Kawakifps {img https://files.catbox.moe/0xff8h.jpg}",
+		"Mathe_ {img https://files.catbox.moe/767imj.jpg}",
+		"Hu tao sem dano {img https://files.catbox.moe/nwb0sp.jpeg}",
+		"Gado da Treyni {img https://files.catbox.moe/xbqdmi.jpg}",
+		"Miyuki {img https://files.catbox.moe/j4rxlr.jpg}",
+		"House {img https://files.catbox.moe/bwv5yx.jpg}",
+		"Gumi {img https://files.catbox.moe/53mu26.jpg}",
+		"Rumu {img https://files.catbox.moe/zter61.jpg}",
+		"Off_saas {img https://files.catbox.moe/9wn8uv.jpg}",
+		"AuzendeGBR {img https://files.catbox.moe/cs3r6y.jpg}",
+		"Letty {img https://files.catbox.moe/lkarrz.jpg}",
+		"Hiro {img https://files.catbox.moe/rksm5m.jpg}",
+		"Luis - ハリモグラ🤍 {img https://files.catbox.moe/qwcp95.jpg}",
+		"Daniel {img https://files.catbox.moe/jq787v.jpg}",
+		"Enzo MIDguel  {img https://files.catbox.moe/tp8p6p.jpg}",
+		"Rimu {img https://files.catbox.moe/wztub7.jpg}",
+		"ChocoMilkye {img https://files.catbox.moe/s59x3b.jpg}",
+		"doge the Brazilian {img https://files.catbox.moe/20fmuq.jpg}",
+		"IgorFN {img https://files.catbox.moe/uaeis4.jpeg}",
+		"｡ﾟU o r u t a ⸼ ꞈ {img https://files.catbox.moe/rm0z6l.jpg}",
+		"sabs {img https://files.catbox.moe/s03zbo.jpg}",
+		"barbas {img https://files.catbox.moe/yev96p.jpeg}",
+		"p4trick  {img https://files.catbox.moe/ceucyk.jpg}",
+		"Vegeto Bieu ᶜʳᶠ {img https://files.catbox.moe/xilf36.jpg}",
+		"Tinho {img https://files.catbox.moe/x4168r.jpg}",
+		"Saturn {img https://files.catbox.moe/fyic4r.jpg}",
+		"Lukcyno {img https://files.catbox.moe/qw6njb.jpg}",
+		"Haunter {img https://files.catbox.moe/q2ghj1.jpg}",
+		"Yotsufag {img https://files.catbox.moe/uekgo7.jpg}",
+		"Trazin {img https://files.catbox.moe/exe4ag.png}",
+		"Henrique {img https://files.catbox.moe/9ppxvx.jpg}",
+		"SUKR4AM {img https://files.catbox.moe/ouk8c4.jpg}",
+		"Souji {img https://files.catbox.moe/68t6yr.png}",
+		"Last Romantic {img https://files.catbox.moe/8rz41n.jpg}",
+		"Diego VF {img https://files.catbox.moe/nfj9td.jpeg}",
+		"Axicara 🍵 {img https://files.catbox.moe/r1motd.jpeg}",
+		"Adler o defensor {img https://files.catbox.moe/z6vaxl.jpg}",
+		"Josefgrk {img https://files.catbox.moe/chz94d.jpg}",
+		"Scorpion {img https://files.catbox.moe/chz94d.jpg}",
+		"Lmzs {img https://files.catbox.moe/03tefc.jpg}",
+		"Davih 8000⭐ {img https://files.catbox.moe/2gzrml.jpg}",
+		"Miranho {img https://files.catbox.moe/o3qj02.jpg}",
+		"rehstart {img https://files.catbox.moe/7f96ha.jpg}",
+		"Sora the Angel {img https://files.catbox.moe/y3wcu9.jpeg}",
+		"tsuiushi {img https://files.catbox.moe/640719.jpg}",
+		"Guardiao_dofim {img https://files.catbox.moe/8j8fnr.jpg}",
+		"Gnomiu {img https://files.catbox.moe/pqu0pz.jpg}",
+		"Lipecs {img https://files.catbox.moe/kfjiy5.png}",
+		"say {img https://files.catbox.moe/dkx8lf.png}",
+		"Cranium {img https://files.catbox.moe/hff9m4.jpg}",
+		"insidetricky {img https://files.catbox.moe/xfqq63.jpg}",
+		"Gabrielx0946 {img https://files.catbox.moe/e1uur3.jpg}",
+		"Lucas {img https://files.catbox.moe/g145nc.jpeg}",
+		"Enrico {img https://files.catbox.moe/3rcrgz.jpg}",
+		"Cejota {img https://files.catbox.moe/bt6uej.jpg}",
+		"AllanV3667 {img https://files.catbox.moe/27oj6g.jpeg}",
+		"remzinhoooo {img https://files.catbox.moe/ki7aau.png}",
+		"Seu Zé {img https://files.catbox.moe/cn1qei.jpg}",
+		"Phytion {img https://files.catbox.moe/byt63n.png}",
+		"Zagalu {img https://files.catbox.moe/ojvkt6.jpg}",
+		"JaoMitadas _ {img https://files.catbox.moe/qrgbk3.png}",
+		"Suquindefrutaa {img https://files.catbox.moe/g3hvlz.jpg}",
+		"lookc {img https://files.catbox.moe/7tmo0w.png}",
+		"cavalo_ferro {img https://files.catbox.moe/9y5stl.jpg}",
+		"SUPER LIGHT {img https://files.catbox.moe/st7p24.jpg}",
+		"Natu {img https://files.catbox.moe/bfy1ca.jpg}",
+		"aubaron2 {img https://files.catbox.moe/7nffzp.jpg}",
+		"Dave 🎧 {img https://files.catbox.moe/wwbgaz.jpg}",
+		"Puraplatinadao {img https://files.catbox.moe/3lshfa.png}",
+		"Vitu Senpai {img https://files.catbox.moe/zcizgf.jpg}",
+		"PicoUwU {img https://files.catbox.moe/z9lwt7.png}",
+		"panzerkt99 {img https://files.catbox.moe/eiad3i.jpeg}",
+		"TodoDiaIcon {img https://files.catbox.moe/e5imge.png}",
+		"Figurantqualqur {img https://files.catbox.moe/55ljsf.jpg}",
+		"vhtuber {img https://files.catbox.moe/pnkh2w.jpg}",
+		"yorfag:) {img https://files.catbox.moe/jflff3.jpg}",
+		"Տαℓѵα∂σɾ•LOGH {img https://files.catbox.moe/eddchz.jpg}",
+		"John {img https://files.catbox.moe/9j93m0.jpg}",
+		"Alê {img https://files.catbox.moe/r36si1.jpg}",
+		"Malaquias? {img https://files.catbox.moe/zx2hr5.jpg}",
+		"S4toru_BR {img https://files.catbox.moe/qktsup.jpg}",
+		"kann alles {img https://files.catbox.moe/syoq7r.jpg}",
+		"Guaxinim {img https://files.catbox.moe/955nbm.jpg}",
+		"Barusu {img https://files.catbox.moe/3vew6i.jpg}",
+		"salada de frutas {img https://files.catbox.moe/95e403.png}",
+		"LeoZ7_ {img https://files.catbox.moe/pmtxky.jpg}",
+		"zKamikaze_ {img https://files.catbox.moe/8lbk8o.jpg}",
+		"Aurelion {img https://files.catbox.moe/joact9.jpg}",
+		"Kaze {img https://files.catbox.moe/tsdpbs.jpg}",
+		"LipeAzy {img https://files.catbox.moe/i53ik1.jpeg}"
+	],
+	"animesR": [
+		"Kanojo, Okarishimasu{img https://files.catbox.moe/l563vn.jpg}",
+		"Kaifuku {img https://files.catbox.moe/hiqucr.jpg}",
+		"Tokyo Revengers {img https://files.catbox.moe/1rc2rf.png}",
+		"Platinum End {img https://files.catbox.moe/ckm2g8.png}",
+		"Tomodachi game {img https://files.catbox.moe/vykddf.png}",
+		"Nanatsu no Taizai {img https://files.catbox.moe/30136m.jpg}",
+		"Naruto Shippuden {img https://files.catbox.moe/abw4lp.png}"
+	],
+	"times": [
+		"Vasco da gama{img https://files.catbox.moe/m71285.png}",
+		"Flamengo{img https://files.catbox.moe/dbw875.jpg}",
+		"Palmeiras{img https://files.catbox.moe/1uiicc.jpg}",
+		"Grêmio {img https://files.catbox.moe/fpaa0n.jpg}"
+	],
+	"Amou": [
+		"Re:zero {img https://files.catbox.moe/tbbndj.jpg}",
+		"SpyXFamily {img https://files.catbox.moe/z7sw5c.jpg}",
+		"Kaguya-Sama {img https://files.catbox.moe/aok9mj.jpg}",
+		"Shigatsu wa Kimi no Uso {img https://files.catbox.moe/r7pgdo.png }",
+		"86 {img https://files.catbox.moe/zpupav.png}"
+	],
+	"origin": [
+		"#nomes# acabou de se casar com #waifus#",
+		"Foi descoberto que #nomes# deu nota 10 pra #animesR#",
+		"#nomes# é secretamente apaixonado(a) por #nomes# , se peguem logo!",
+		"#nomes# adicionou #Amou# aos favoritos ⭐",
+		"casa, beija ou mata #nomes#, #nomes# #nomes# ?",
+		"#nomes# é o novo reforço do #times#",
+		"#nomes# foi diagnosticado como  #doença#",
+		"#nomes# está planejando encher #nomes# de porrada",
+		"#nomes# foi pego assistindo #Animetrash#",
+		"#nomes# encontrou um #dn# e escreveu o nome do seu terceiro @, Quem foi?",
+		"#nomes#  ganhou 2737393798274 dólares com vendas de orgãos ",
+		"#nomes# fez comida pra todo mundo, menos para #nomes#",
+		"#nomes# dropou #Amou# e deu nota 3 por pena...",
+		"Escolha uma pessoa pra te proteger que os outros dois irão  te atacar #nomes#, #nomes# #nomes# ",
+		"#nomes# é o novo presidente da(o) #Países#",
+		"#nomes# não resistiu a tentação e mamou  #nomes# no meio da rua...",
+		"#nomes# foi hospitalizado por carregar o #redel# nas costas",
+		"#nomes# morreu e foi enviado para o mundo de #re#",
+		"#nomes# foi pego chorando enquanto assistia #mid# escondido",
+		"Você mataria #nomes# pra passar 1 dia com #gostosa# ?",
+		"Em um x1 entre #nomes# e #nomes# quem venceria ?",
+		"#nomes# é o novo diretor da(o) #studio# ",
+		"#nomes# revelou que usa #calcinha#",
+		"#nomes# foi ameaçado (a) após roubar waifu de #nomes# no #mudae#",
+		"#nomes# diariamente lambe as fotos de #nomes#",
+		"#nomes# ameaçou #nomes# por ter dado nota baixa pra #Amou#",
+		"Você mataria #nomes# para salvar #nomes#?",
+		"#nomes# diz que #animesR# é do balacobaco",
+		"Você mataria #nomes# por #por1#?"
+	],
+	"doença": [
+		"calvo{img https://files.catbox.moe/lzkkox.jpg}"
+	],
+	"Animetrash": [
+		"Overflow{img https://files.catbox.moe/acb4vk.jpg}",
+		"Shoujo Ramune {img https://files.catbox.moe/e5bzls.jpg}",
+		"Euphoria {img https://files.catbox.moe/u4clk5.png}",
+		"Boku no Pico {img https://files.catbox.moe/3356cu.png}"
+	],
+	"re": [
+		"Re:zero{img https://files.catbox.moe/tbbndj.jpg}",
+		"Mirai Nikki{img https://files.catbox.moe/1hk4h9.jpg}",
+		"Otome Game Sekai wa Mob ni Kibishii Sekai Desu{img https://files.catbox.moe/8nsvuu.png}",
+		"Platinum End {img https://files.catbox.moe/ckm2g8.png}"
+	],
+	"Países": [
+		"Angola {img https://files.catbox.moe/rkcytn.png}",
+		"Brasil {img https://files.catbox.moe/50smm4.png}",
+		"Colômbia {img https://files.catbox.moe/9nu5gr.png}",
+		"Canadá {img https://files.catbox.moe/ffqqg7.webp}"
+	],
+	"waifus": [
+		"Emilia💍 {img https://files.catbox.moe/g9v9hi.jpg}",
+		"Kaguya Shinomiya💍 {img https://files.catbox.moe/8pkf5j.jpg}",
+		"Nagatoro💍 {img https://files.catbox.moe/60mdwj.jpg}",
+		"Komi Shouko💍 {img https://files.catbox.moe/epn8xf.jpg}",
+		"Rem💍 {img https://files.catbox.moe/r0dfu0.jpg}",
+		"Shikimori💍 {img https://files.catbox.moe/kbt46j.jpg}",
+		"Marin Kitagawa💍 {img https://files.catbox.moe/72uicj.jpg}",
+		"Shinobu Kocho💍 {img https://files.catbox.moe/ytux2r.png}",
+		"Tsukasa💍 {img https://files.catbox.moe/1evtnn.jpg}",
+		"Nino Nakano💍 {img https://files.catbox.moe/b1bikr.jpg}",
+		"Rin Tohsaka💍 {img https://files.catbox.moe/zbk6up.jpg}",
+		"Miku Nakano💍 {img https://files.catbox.moe/v7b4u8.jpg}"
+	],
+	"redel": [
+		"Twitter {img https://files.catbox.moe/0xpo9n.png}"
+	],
+	"mid": [
+		"Kawaii dake ja Nai Shikimori-san {img https://files.catbox.moe/65eoue.png}",
+		"Horimiya {img https://files.catbox.moe/qfsthj.png}"
+	],
+	"gostosa": [
+		"Makima {img https://files.catbox.moe/z3du9y.jpg}",
+		"Rem {img https://files.catbox.moe/r0dfu0.jpg}",
+		"Power {img https://files.catbox.moe/tzz0hp.jpg}",
+		"Kurumi Tokisaki {img https://files.catbox.moe/59h7dn.jpg}"
+	],
+	"studio": [
+		"Wit Studio {img https://files.catbox.moe/8oj5y9.png}",
+		"Toei Animation {img https://files.catbox.moe/3j40nb.png}",
+		"MAPPA {img https://files.catbox.moe/pisvxc.png}",
+		"Studio Deen {img https://files.catbox.moe/rly11q.png}"
+	],
+	"calcinha": [
+		"calcinha {img https://files.catbox.moe/ko34pj.png}"
+	],
+	"mudae": [
+		"mudae {img https://files.catbox.moe/l7p9el.png}"
+	],
+	"dn": [
+		"Death note  {img https://files.catbox.moe/0u3cqp.png}"
+	],
+	"por1": [
+		"1 milhão de dólares {img https://files.catbox.moe/aivq3j.webp}",
+		"uma Light novel de re:zero {img https://files.catbox.moe/pzr3ms.png}",
+		"um Livro do Felipe neto {img https://files.catbox.moe/5j7wt4.JPG}"
+	]
+}
